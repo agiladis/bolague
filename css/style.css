@@ -1,0 +1,477 @@
+@font-face {
+	font-family: VERDANA0;
+	src:url('../fonts/VERDANA0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: VerdanaBold;
+	src:url('../fonts/VerdanaBold.ttf') format('truetype');
+}
+/*ALL*/
+body{
+	font-family: 'VERDANA0';
+	/*background-color: black;*/
+}
+
+a {
+	text-decoration: none !important;
+}
+
+.black {
+	color: black;
+}
+
+.uefa {
+	background-color: #0c236b;
+	color: white;
+}
+.pl {
+	background-color: #3a1148;
+	color: white;
+}
+.pd {
+	background-color: #25282a;
+	color: white;
+}
+.bundesliga {
+	background-color: #c80a00;
+	color: white;
+}
+.eredivisie {
+	background-color: #271d66;
+	color: white;
+}
+.ligue1 {
+	background-color: #cdfb0a;
+}
+
+/*CUSTOM*/
+.white {
+	color: white;
+}
+.p-14{
+	padding: 14px;
+}
+
+/*HEADER*/
+div.navAtas{
+	background-color: black;
+}
+
+div.navAtas img {
+	transition: transform .3s;
+}
+
+div.navAtas img:hover {
+	transform: scale(1.3);
+}
+div.navAtas, nav.navbar {
+	padding: 0rem 2rem;
+}
+
+div#navbarSupportedContent {
+	display: block ruby !important;
+	text-align: right;
+}
+
+#backgroundVideo {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	min-height: 100%;
+}
+
+.navbar-brand {
+	font-size: 1.8em !important;
+	padding: 0em;
+}
+.topnav {
+  	overflow: hidden;
+	background-color: #cacaca;
+	padding: 0rem 1rem;
+}
+
+.topnav a:not(:first-child) {
+	padding-top: .4rem; 
+}
+
+.topnav a{
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	font-size: 1rem;
+	transition: transform .3s;
+	padding: 0rem 1rem;
+	color: black;
+}
+
+.topnav a:hover{
+	transform: scale(1.1);
+	color: black;
+}
+
+.topnav .icon {
+	display: none;
+}
+
+div.navAtas img {
+	width: 17px;
+}
+
+div.navAtas ul {
+	display: block ruby;
+}
+div.nav-atas li {
+	margin: 0px 5px;
+}
+
+div.navAtas section {
+	margin-top: 7px;
+}
+
+div.navAtas a{
+	color: white;
+}
+
+/*KONTEN*/
+#preload {
+	position: fixed;
+	top: 50%;
+	left: 47.5%;
+	z-index: 99;
+}
+.spinner-grow {
+	width: 3rem !important;
+	height: 3rem !important;
+}
+#carouselExampleSlidesOnly {
+	z-index: -99;
+	position: fixed;
+	top: 0px;
+	background-color: black;
+}
+
+#carouselExampleSlidesOnly img {
+	opacity: .4;
+}
+
+/*.carouselKonten{
+	background-color: #000000ba;
+	height: 90vh;
+}*/
+
+/*
+.carouselKonten .logo {
+	width: 100%;
+	position: relative;
+}*/
+
+.carouselKonten img {
+	width: 40%;
+	margin-top: 40px;
+}
+
+div.konten {
+	position: relative;
+	top: -1rem;
+	background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(2, 0, 36, 0) 15%, rgb(9, 9, 121) 45%, rgb(0, 212, 255) 100%);
+	padding-bottom: 9rem;
+}
+
+select.custom-select {
+	background-color: transparent;
+	color: white;
+	display: none;
+}
+
+
+div.main img {
+	width: 100%;
+}
+
+div.card:not(#leagueOption) {
+	border-radius: 17px !important;
+	/*background-image: url(../img/pl_back.jpg);*/
+}
+
+div.card-header {
+	padding: 0px;
+	background-color: #f2f2f2;
+}
+
+.standings {
+	overflow-y: auto;
+	max-height: 850px
+}
+div.card-body {
+	padding: 14px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+	z-index: 1;
+	top: 0px;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block ruby;
+    height: 47.5833px;
+	background-color: #f2f2f2;
+	left: 82px;
+
+}
+
+div.card table img{
+	width: 2rem;
+	margin-right: 1rem;
+}
+
+#cardNM {
+	display: flex;
+	overflow-x: auto;
+}
+div.nextMatch .club img {
+	width: 130px;
+}
+
+div.nextMatch span {
+	color: grey;
+}
+.standings table {
+	font-size: 13px;
+}
+.standingHead {
+	text-align: center;
+	background-color: #3a1148;
+	color: white;
+}
+div.btn-group {
+	display: block;
+}
+
+div.btnLeague button {
+	cursor: pointer;
+	background-color: grey;
+	color: white;
+	width: 100%;
+	border: 0px;
+}
+
+div.navMatch button {
+	cursor: pointer;
+	background-color: transparent;
+	border: 0px;
+	color: white;
+}
+
+div.navMatch span {
+	display: block ruby;
+	color: white;
+}
+
+div.historyRow {
+	display: flex;
+	overflow-x: scroll;
+	/*width: 614px;*/
+	height: 166px;
+	background-image: url(../img/previousMatch.png);
+	background-color: white;
+	background-position: center;
+}
+
+div.historyMatch {
+	padding: 14px;
+	width: 150px;
+	text-align: center;
+	border-right: 1px solid #5b585840;
+	padding-bottom: 17px;
+}
+
+div.historyMatch img {
+	width: 50px;
+	display: block;
+}
+
+div.historyMatch .teamGroup {
+	display: flex;
+}
+
+div.historyMatch .teamGroup .teamSide {
+	display: table-cell;
+	text-align: center;
+}
+
+div.historyMatch .teamGroup .vsLogo {
+	margin: auto;
+	font-size: 25px;
+	font-weight: lighter;
+}
+
+div.historyMatch .score {
+	border: 1px solid #3a1148;
+	border-radius: 50px;
+}
+
+/*FOOTER*/
+footer {
+	margin-top: -1rem;
+}
+
+div.footerAtas {
+	background-color: #f8f9fa;
+	padding: 30px;
+}
+
+footer th, footer td {
+	padding: 0px !important;
+}
+
+div.footerBawah {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 10px;
+}
+
+
+/*MEDIA SCREEN*/
+@media screen and (max-width: 768px){
+	/*selector apa yang di ubah*/
+	
+	#carouselExampleSlidesOnly {
+		overflow: hidden;
+	}
+	.carouselKonten img {
+		margin-top: 60px;
+	}
+	.displayLeague {
+		display: none;
+	}
+
+	select.custom-select {
+		display: inline-block;
+	}
+
+	.konten {
+		overflow: hidden;
+	}
+
+	div.col-standing {
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+	div.col-standing {
+		font-size: .8rem;
+	}
+	div.col-standing th, div.col-standing td {
+		padding: 3px;
+		font-size: 11px;
+	}
+	.standings {
+		overflow-y: auto;
+		max-height: 36rem;
+	}
+	#tableStanding img {
+		width: 1rem;
+	}
+
+	.konten {
+		background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(30, 2, 49) 5%, rgb(9, 9, 121) 45%, rgb(0, 212, 255) 100%) !important;
+	}
+
+	.nextMatch .card-body span {
+		font-size: .8rem;
+	}
+	.nextMatch .card-body h4 {
+		font-size: 1rem;
+	}
+	.club img {
+		width: 40% !important;
+	}
+	.nextMatch .card-body a {
+		display: block ruby;
+		padding: 10px 0px;
+	}
+}
+
+/*layar handphone*/
+@media screen and (max-width: 414px) {
+    /*selector apa yang mau di ubah*/
+    .topnav a:not(:first-child) {display: none;}
+	.topnav a.icon {
+		float: right;
+		display: block;
+	}
+	.topnav.responsive {position: relative;}
+	.topnav.responsive .icon {
+		position: absolute;
+		right: 16px;
+		top: 0;
+	}
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+
+	.sampul {
+		height: 56vh;
+	}
+
+	#carouselExampleSlidesOnly {
+		position: relative;
+		height: 56vh;
+	}
+
+	#carouselExampleSlidesOnly img {
+		height: 50%;
+		width: 100%;
+		position: fixed;
+		-webkit-transform: translate(-50%, -50%) scale(1.5);
+		-moz-transform: translate(-50%, -50%) scale(1.5);
+		-o-transform: translate(-50%, -50%) scale(1.5);
+		transform: translate(-50%, -50%) scale(1.5);
+		top: 30%;
+		left: 50%;
+	}
+	
+	.carouselKonten {
+		position: relative;
+		top: -21rem;
+	}
+	.carouselKonten img {
+		width: 80%;
+		margin-top: 0px;
+	}
+	div.col-standing {
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	div.navMatch-sm {
+		display: none;
+	}
+
+	div.namMatch-xs {
+		display: unset !important;
+	}
+	.footerAtas table {
+		display: none;
+	}
+	.footerAtas-xs a {
+		color: black;
+	}
+}

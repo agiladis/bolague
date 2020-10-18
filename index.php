@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- menyesuaikan heading saat berada di device dengan pixel kecil -->
+	<title>BOLAGUE.COM</title>
+	<link rel="icon" type="text/css" href="img/icon.jpg">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="getAPI(2001)">
+	<div class="container-fluid" id="preload">
+		<!-- TEMPAT LOADING -->
+	</div> <!-- end loading -->
+	<div class="header">
+		<div class="sampul">
+			<div class="navAtas">
+				<div class="row">
+					<div class="col-6">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item mr-2">
+								<a href="" class="nav-link">
+									<img src="img/fb.png">
+								</a>
+							</li>
+							<li class="nav-item mr-2">
+								<a href="" class="nav-link">
+									<img src="img/ig.png">
+								</a>
+							</li>
+							<li class="nav-item mr-2">
+								<a href="" class="nav-link">
+									<img src="img/twt.png">
+								</a>
+							</li>
+							<li class="nav-item mr-2">
+								<a href="" class="nav-link">
+									<img src="img/yt.png">
+								</a>
+							</li>
+						</ul>
+					</div> <!-- end col-6 col-md-6 -->
+					<div class="col-6 text-right">
+						<section>
+							<a href="" class="mr-2 my-auto">LOGIN</a>
+							<a href="" class="mr-2"> | </a>
+							<a href="">SIGN IN</a>
+						</section>
+					</div> <!-- end col-md-6 -->
+				</div> <!-- end row -->
+			</div> <!-- end navAtas -->
+
+			<div class="navBawah">
+				<div class="topnav" id="myTopnav">
+					<a href="index.php" class="active"><h3><b>BOLAGUE</b></h3></a>
+					<a href="#transfer" class="disabled">Transfer Pemain</a>
+					<a href="#news" class="disabled">Berita</a>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				    	<i class="fa fa-bars"></i>
+						</a>
+				</div>
+			</div> <!-- end navBawah -->
+				
+			<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+	 			<div class="carousel-inner">
+	    			<div class="carousel-item active">
+	        			<img src="img/carousel2.jpg" class="d-block w-100" alt="...">
+	    			</div>
+		    		<div class="carousel-item">
+		      			<img src="img/carousel6.jpg" class="d-block w-100" alt="...">
+		    		</div>
+		    		<div class="carousel-item">
+		      			<img src="img/carousel5.jpg" class="d-block w-100" alt="...">
+		    		</div>
+		    		<div class="carousel-item">
+		    			<img src="img/carousel1.jpg" class="d-block w-100" alt="...">
+		    		</div>
+				</div>
+			</div> <!-- end carousel -->
+			<div class="carouselKonten">
+				<div class="container text-center">
+					<div class="logo">
+						<img src="img/logo2.png">
+					</div>
+				</div>
+			</div>
+		</div> <!-- end sampul -->
+	</div> <!-- end header -->
+	
+	<!-- KONTEN -->
+	<div class="konten" id="content">
+		<div class="container-fluid mb-3 navigasiMain">
+			<div class="row">
+				<div class="col-md-6 col-sm-12 float-left">
+					<select class="custom-select" >
+						<option class="groupSelectLiga" id="2001" onclick="getAPI(2001)">UEFA Champions League</option>
+						<option class="groupSelectLiga" id="2014" onclick="getAPI(2014)">Primeria Division</option>
+						<option class="groupSelectLiga" id="2021" onclick="getAPI(2021)">English Premier League</option>
+					</select>
+				</div>
+				<div class="col-md-6 col-sm-12 float-left navMatch navMatch-sm text-center">
+					<span>
+						<button><i class="fa fa-arrow-circle-o-left  fa-2x carousel-control-prev" href="#carouselExampleControls" data-slide="prev"></i></button>
+						<h4 class="mr-5 ml-5"><b>NEXT MATCH</b></h4>
+						<button><i class="fa fa-arrow-circle-o-right fa-2x carousel-control-next" href="#carouselExampleControls" data-slide="next"></i></button>
+					</span>
+				</div>
+			</div> <!-- end row -->
+		</div> <!-- end container-fluid -->		
+		<div class="main">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-1 displayLeague p-sm-1">
+						<div id="accordion">
+							<div class="dropdown">
+								<div class="card rounded-0" id="leagueOption">
+		    						<div class="card-header" id="headingOne">
+								    	<h5 class="mb-0">
+								        	<button class="btn btn-link p-4" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onclick="getAPI(2001)">
+								          		<img src="img/uefa.png">
+								        	</button>
+								      	</h5>
+		    						</div>
+								    <div id="collapseOne" class="collapse show uefa" aria-labelledby="headingOne" data-parent="#accordion">
+								    	<div class="card-body">
+								        	<small>
+								        		<b>SEASON</b>
+								        		2019/20
+								       		</small>
+								    	</div>
+								    </div>
+								</div> <!-- end card -->
+								<div class="dropdown-content">
+									<p><b>UEFA CHAMPIONS LEAGUE</b></p>
+								</div> <!-- end dropdown-content -->
+							</div> <!-- end dropdown -->
+							<div class="dropdown">
+								<div class="card rounded-0" id="leagueOption">
+		    						<div class="card-header" id="headingTwo">
+								    	<h5 class="mb-0">
+								        	<button class="btn btn-link collapsed p-4" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" onclick="getAPI(2014)">
+								          		<img src="img/laliga.png">
+								        	</button>
+								      	</h5>
+		    						</div>
+								    <div id="collapseTwo" class="collapse pd" aria-labelledby="headingTwo" data-parent="#accordion">
+								    	<div class="card-body">
+								        	<small>
+								        		<b>SEASON</b>
+								        		2019/20
+								       		</small>
+								    	</div>
+								    </div>
+								</div> <!-- end card -->
+								<div class="dropdown-content">
+									<p><b>PRIMERIA DIVISION</b></p>
+								</div> <!-- end dropdown-content -->
+							</div> <!-- end dropdown -->
+							<div class="dropdown">
+								<div class="card rounded-0" id="leagueOption">
+		    						<div class="card-header" id="headingThree">
+								    	<h5 class="mb-0">
+								        	<button class="btn btn-link collapsed p-4" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" onclick="getAPI(2021)">
+								          		<img src="img/PL_logo.png">
+								        	</button>
+								      	</h5>
+		    						</div>
+								    <div id="collapseThree" class="collapse pl" aria-labelledby="headingThree" data-parent="#accordion">
+								    	<div class="card-body">
+								        	<small>
+								        		<b>SEASON</b>
+								        		2019/20
+								       		</small>
+								    	</div>
+								    </div>
+								</div> <!-- end card -->
+								<div class="dropdown-content">
+									<p><b>ENGLISH PREMIER LEAGUE</b></p>
+								</div> <!-- end dropdown-content -->
+							</div> <!-- end dropdown -->
+							<div class="dropdown">
+								<div class="card rounded-0" id="leagueOption">
+		    						<div class="card-header" id="headingFour">
+								    	<h5 class="mb-0">
+								        	<button class="btn btn-link collapsed p-4" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" onclick="getAPI(2002)">
+								          		<img src="img/bundesliga.png">
+								        	</button>
+								      	</h5>
+		    						</div>
+								    <div id="collapseFour" class="collapse bundesliga" aria-labelledby="headingFour" data-parent="#accordion">
+								    	<div class="card-body">
+								        	<small>
+								        		<b>SEASON</b>
+								        		2019/20
+								       		</small>
+								    	</div>
+								    </div>
+								</div> <!-- end card -->
+								<div class="dropdown-content">
+									<p><b>BUNDESLIGA</b></p>
+								</div> <!-- end dropdown-content -->
+							</div> <!-- end dropdown -->
+							<div class="dropdown">
+								<div class="card rounded-0" id="leagueOption">
+		    						<div class="card-header" id="headingFive">
+								    	<h5 class="mb-0">
+								        	<button class="btn btn-link collapsed p-4" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" onclick="getAPI(2003)">
+								          		<img src="img/eredivisie.png">
+								        	</button>
+								      	</h5>
+		    						</div>
+								    <div id="collapseFive" class="collapse eredivisie" aria-labelledby="headingFive" data-parent="#accordion">
+								    	<div class="card-body">
+								        	<small>
+								        		<b>SEASON</b>
+								        		2019/20
+								       		</small>
+								    	</div>
+								    </div>
+								</div> <!-- end card -->
+								<div class="dropdown-content">
+									<p><b>EREDIVISIE</b></p>
+								</div> <!-- end dropdown-content -->
+							</div> <!-- end dropdown -->
+							<div class="dropdown">
+								<div class="card rounded-0" id="leagueOption">
+		    						<div class="card-header" id="headingSix">
+								    	<h5 class="mb-0">
+								        	<button class="btn btn-link collapsed p-4" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" onclick="getAPI(2015)">
+								          		<img src="img/ligue1.png">
+								        	</button>
+								      	</h5>
+		    						</div>
+								    <div id="collapseSix" class="collapse ligue1" aria-labelledby="headingSix" data-parent="#accordion">
+								    	<div class="card-body">
+								        	<small>
+								        		<b>SEASON</b>
+								        		2019/20
+								       		</small>
+								    	</div>
+								    </div>
+								</div> <!-- end card -->
+								<div class="dropdown-content">
+									<p><b>LIGUE 1</b></p>
+								</div> <!-- end dropdown-content -->
+							</div> <!-- end dropdown -->
+						</div> <!-- end accordion -->
+					</div> <!-- end col-md-1 -->
+					<div class="col-md-5 col-standing p-sm-1">
+						<div class="card standings p-14">
+					  		<div class="card-body p-0">
+								<table class="table table-striped">
+								  	<thead>
+									  	<tr id="tableName" class="standingHead">
+									  		<!-- NAMA LIGA DI STAND -->
+									  	</tr>
+									    <tr>
+									      <th scope="col">Pos</th>
+									      <th scope="col">Club</th>
+									      <th scope="col">M</th>
+									      <th scope="col">M</th>
+									      <th scope="col">S</th>
+									      <th scope="col">K</th>
+									      <th scope="col">Pts.</th>
+									    </tr>
+									</thead>
+									<tbody id="tableStanding">
+										<!-- ISI KLASEMEN -->
+									</tbody>
+								</table>
+					  		</div>
+						</div>
+					</div>
+					
+					<!-- col - 6 -->
+					<div class="col-md-6 col-12 p-sm-1 p-1">
+						<div class="col-md-6 col-sm-12 float-left navMatch navMatch-xs d-sm-none text-center">
+							<span>
+								<button><i class="fa fa-arrow-circle-o-left  fa-2x carousel-control-prev" href="#carouselExampleControls" data-slide="prev"></i></button>
+								<h4 class="mr-5 ml-5"><b>NEXT MATCH</b></h4>
+								<button><i class="fa fa-arrow-circle-o-right fa-2x carousel-control-next" href="#carouselExampleControls" data-slide="next"></i></button>
+							</span>
+						</div>
+						<div id="cardNM">
+							<!-- CARD NEXT MATCH -->
+						</div> <!-- end cardNM -->
+						<div class="col-md-12 mt-3 p-sm-1">
+							<div class="historyRow" id="cardPM">
+								<!-- HISTORY MATCH -->
+							</div> <!-- end historyRow -->
+						</div> <!-- end col-md-12 -->
+					</div> <!-- end col-md-6 -->
+
+				</div>
+			</div>
+		</div>
+	</div> <!-- end konten -->
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="footerAtas">
+			<div class="container">
+				<table class="table table-borderless mb-0">
+					<thead>
+					    <tr>
+					    	<th scope="col">COMERCIAL</th>
+					    	<th scope="col">BANTUAN</th>
+					    	<th scope="col">SOCIAL MEDIA</th>
+					    	<th scope="col">CONTACT US</th>
+					    </tr>
+				    </thead>
+				  	<tbody>
+				    	<tr>
+							<td>PARTNERSHIP</td>
+							<td>SYARAT & KETENTUAN</td>
+							<td>FACEBOOK</td>
+							<td>ALAMAT</td>
+				    	</tr>
+					    <tr>
+							<td >ADVERTISING & SALES</td>
+							<td>KEBIJAKAN PRIVASI</td>
+							<td>INSTAGRAM</td>
+					    	<td>EMAIL</td>
+					    </tr>
+					    <tr>
+					    	<td>INFORMASI COPYRIGHT</td>
+					    	<td>PANDUAN KEAMANAN</td>
+					    	<td>TWITTER</td>
+					    	<td>TELPON</td>
+					    </tr>
+					    <tr>
+					    	<td>MARKETING & COMERCIAL</td>
+					    	<td>KODE DISIPLIN</td>
+					    	<td>GOOGLE+</td>
+					    </tr>
+					     <tr>
+					    	<td></td>
+					    	<td></td>
+					    	<td>YOUTUBE</td>
+					    	<td></td>
+					    </tr>
+				  </tbody>
+				</table>
+				<div class="footerAtas-xs d-sm-none text-center">
+					<p>
+						<a href="">Comercial</a>
+						<a href="">Bantuan</a>
+						<a href="">Sosial Media</a>
+						<a href="">Contact Us</a>
+					</p>
+				</div>
+			</div> <!-- end footerAtas -->
+		</div> <!-- end row -->
+		<div class="footerBawah">
+			<div class="container">
+				Copyright &copy 2020 - www.bolague.com
+				<h6><b>AGIL ADI SAPUTRO</b></h6>
+			</div> <!-- end container -->
+		</div> <!-- end footerBawah -->
+	</footer>
+</body>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</html>
